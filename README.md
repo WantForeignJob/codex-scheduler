@@ -1,5 +1,9 @@
 # Codex Scheduler
 
+[![CI](https://github.com/WantForeignJob/codex-scheduler/actions/workflows/ci.yml/badge.svg)](https://github.com/WantForeignJob/codex-scheduler/actions/workflows/ci.yml)
+[![Code License](https://img.shields.io/badge/code-PolyForm%20Noncommercial%201.0.0-2f6feb)](./LICENSE-CODE)
+[![Docs License](https://img.shields.io/badge/docs-CC%20BY--NC--SA%204.0-1f883d)](./LICENSE-DOCS)
+
 Codex Scheduler is a local-first automation service for running structured coding tasks against one
 or more repositories. It accepts work from APIs and Linear, prepares an isolated workspace, asks
 Codex to make the code changes, runs verification commands, retries when needed, and delivers the
