@@ -1,0 +1,45 @@
+host = "127.0.0.1"
+port = 4318
+poll_interval_seconds = 60
+worker_concurrency = 1
+default_model = "gpt-5.4"
+default_repair_loops = 3
+workspace_root = "./workspaces"
+report_root = "./reports"
+sqlite_path = "./data/scheduler.db"
+gitleaks_command = "gitleaks detect --no-git --source . --report-format json --report-path gitleaks-report.json"
+
+[[repositories]]
+id = "sample-local"
+name = "Sample Local Repository"
+mode = "local"
+local_path = "C:/path/to/local/repo"
+default_branch = "main"
+install_command = "pnpm install --frozen-lockfile"
+verify_commands = ["pnpm test", "pnpm build"]
+allow_network = true
+
+[repositories.linear_rules]
+team_keys = ["ENG"]
+project_names = ["Scheduler"]
+labels = ["codex-auto"]
+
+[repositories.linear_statuses]
+in_progress = "In Progress"
+done = "Done"
+failed = "Failed"
+
+[[repositories]]
+id = "sample-remote"
+name = "Sample GitHub Repository"
+mode = "github"
+clone_url = "https://github.com/org/repo.git"
+default_branch = "main"
+install_command = "pnpm install --frozen-lockfile"
+verify_commands = ["pnpm test", "pnpm build"]
+allow_network = true
+
+[repositories.linear_rules]
+team_keys = ["ENG"]
+project_names = ["Remote"]
+labels = ["codex-remote"]

@@ -1,0 +1,33 @@
+name: Feature request
+description: Propose a new capability or workflow improvement.
+title: "[Feature] "
+labels:
+  - enhancement
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem statement
+      description: What workflow or user problem are you trying to solve?
+      placeholder: I want the scheduler to ...
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: Describe the change you would like to see.
+      placeholder: Add a workflow state that ...
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Share any workarounds or alternative designs you evaluated.
+      placeholder: I also considered ...
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Links, screenshots, design notes, or prior discussions.

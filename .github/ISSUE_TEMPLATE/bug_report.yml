@@ -1,0 +1,44 @@
+name: Bug report
+description: Report a reproducible problem in the scheduler or its integrations.
+title: "[Bug] "
+labels:
+  - bug
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report a bug.
+        Please include a minimal reproduction and avoid posting secrets, tokens, logs with private data, or internal repository URLs.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: What happened, and what did you expect to happen instead?
+      placeholder: The scheduler retried the same task twice after a queue restart...
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Share the smallest sequence of steps that reproduces the problem.
+      placeholder: |
+        1. Start the scheduler with ...
+        2. Create a task via POST /api/tasks ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Node version, pnpm version, and relevant integration details.
+      placeholder: Windows 11, Node 24.x, pnpm 10.x, local repository mode
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant output
+      description: Paste sanitized logs, error messages, screenshots, or stack traces.
+      placeholder: Paste sanitized output here.

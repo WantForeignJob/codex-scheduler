@@ -1,0 +1,44 @@
+Codex Scheduler licensing overview
+
+This repository uses split licensing.
+
+1. Source code and software configuration
+
+Unless a file says otherwise, the software source code and software-oriented configuration in this
+repository are licensed under the PolyForm Noncommercial License 1.0.0.
+
+This includes, for example:
+
+- `src/`
+- `tests/`
+- `config/`
+- `package.json`
+- `tsconfig.json`
+- `drizzle.config.ts`
+- `vitest.config.ts`
+- `.github/workflows/`
+
+See [LICENSE-CODE](./LICENSE-CODE).
+
+2. Documentation and community files
+
+Documentation and community-facing files are licensed under CC BY-NC-SA 4.0 unless a file says
+otherwise.
+
+This includes, for example:
+
+- `README.md`
+- `CHANGELOG.md`
+- `CONTRIBUTING.md`
+- `CODE_OF_CONDUCT.md`
+- `SECURITY.md`
+- `.github/ISSUE_TEMPLATE/`
+- `.github/pull_request_template.md`
+
+See [LICENSE-DOCS](./LICENSE-DOCS).
+
+Attribution
+
+If you share, fork, redistribute, or adapt this project, you must preserve attribution to the
+original project and its copyright notices, and you must keep the applicable license notices and
+links with the material you distribute.
