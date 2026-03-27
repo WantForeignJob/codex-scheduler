@@ -21,8 +21,8 @@ importers:
         specifier: ^0.116.0
         version: 0.116.0
       '@openai/codex-sdk':
-        specifier: ^0.116.0
-        version: 0.116.0
+        specifier: ^0.117.0
+        version: 0.117.0
       better-sqlite3:
         specifier: ^12.8.0
         version: 12.8.0
@@ -610,8 +610,8 @@ packages:
   '@octokit/types@16.0.0':
     resolution: {integrity: sha512-sKq+9r1Mm4efXW1FCk7hFSeJo4QKreL/tTbR0rz/qx/r1Oa2VV83LTA/H/MuCOX7uCIJmQVRKBcbmWoySjAnSg==}
 
-  '@openai/codex-sdk@0.116.0':
-    resolution: {integrity: sha512-qrn1Pu5G1GJ9w4m/Lk3L3466ulMGG9SfyR0LPAaXdisuQI1rqgoUOuoZ4byX7cCzn0x1g2+WPc0apZgjMEK04Q==}
+  '@openai/codex-sdk@0.117.0':
+    resolution: {integrity: sha512-qJxkBEf3ninCC18g3YypNJ149byASwTdC9eyE060CsSBMCGZN5RNeQhYJxGjGcVFKaysWCXZ16SMzmYlcLAKVw==}
     engines: {node: '>=18'}
 
   '@openai/codex@0.116.0':
@@ -651,6 +651,47 @@ packages:
 
   '@openai/codex@0.116.0-win32-x64':
     resolution: {integrity: sha512-6sBIMOoA9FNuxQvCCnK0P548Wqrlk3I9SMdtOCUg2zYzYU7jOF2mWS1VpRQ6R+Jvo2x50dxeJZ+W37dBmXfprw==}
+    engines: {node: '>=16'}
+    cpu: [x64]
+    os: [win32]
+
+  '@openai/codex@0.117.0':
+    resolution: {integrity: sha512-UmWo39UCGqFB2ImWwtI/TOnVQ1M2JIbCeDVBzOtG57WuTIPBNvDyluPNrzNv6eAcTYpyDLC5+nT5k49LrzEwow==}
+    engines: {node: '>=16'}
+    hasBin: true
+
+  '@openai/codex@0.117.0-darwin-arm64':
+    resolution: {integrity: sha512-atIlp7v15chsfMpypW8/4PBp6kOca8wBZoC0hdAWGl/PKZ76/cTC+LKi2XhRfMqKY25nUxnXnm1DnLHqWGKRXA==}
+    engines: {node: '>=16'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@openai/codex@0.117.0-darwin-x64':
+    resolution: {integrity: sha512-/TWwOtzo44flOQptQTyu+zozESNpsm/jLlK+6vEjOVikXF+kxeA7sgJHRQQ78dFvnHTW+EpkUYew5qNawREtgw==}
+    engines: {node: '>=16'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@openai/codex@0.117.0-linux-arm64':
+    resolution: {integrity: sha512-rgQIYipgkMRGvDlK3qbI9v/3NxB1tO3OoNYkWW9onOcev8Jno+hZC0ZEcVamxC5XGspVuPv2Wg+e9hw6jA65FA==}
+    engines: {node: '>=16'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@openai/codex@0.117.0-linux-x64':
+    resolution: {integrity: sha512-kvOZtyLAgFEFSFRJXVzTnFYoZgZya9ttpxDYHR+diBgDBlcBp1B6pRiIGUmCOauxpHtTFUEyisvhKQquZbAtfg==}
+    engines: {node: '>=16'}
+    cpu: [x64]
+    os: [linux]
+
+  '@openai/codex@0.117.0-win32-arm64':
+    resolution: {integrity: sha512-oglr9IEh0P3cXF1LyGE4ROR6OFOJ7zmOZppoS+FJR6ovaPb08RhfXCDq/1yyzZhCYIaL6GHIdJ56ZEfpM4FuCQ==}
+    engines: {node: '>=16'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@openai/codex@0.117.0-win32-x64':
+    resolution: {integrity: sha512-ByedNwSlHJ4aE2++fBaUcaqbQsmx2dZS6mhrnv2SqbTY0saRFE2BT1R64fClt8TwXwMsQQn1uvkxjzU4aEhRcg==}
     engines: {node: '>=16'}
     cpu: [x64]
     os: [win32]
@@ -1441,6 +1482,10 @@ packages:
     resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
     engines: {node: '>=12'}
 
+  picomatch@4.0.4:
+    resolution: {integrity: sha512-QP88BAKvMam/3NxH6vj2o21R6MjxZUAd6nlwAS/pnGvN9IVLocLHxGYIzFhg6fUQ+5th6P4dv4eW9jX3DSIj7A==}
+    engines: {node: '>=12'}
+
   pino-abstract-transport@3.0.0:
     resolution: {integrity: sha512-wlfUczU+n7Hy/Ha5j9a/gZNy7We5+cXp8YL+X+PG8S0KXxw7n/JXA3c46Y0zQznIJ83URJiwy7Lh56WLokNuxg==}
 
@@ -2098,9 +2143,9 @@ snapshots:
     dependencies:
       '@octokit/openapi-types': 27.0.0
 
-  '@openai/codex-sdk@0.116.0':
+  '@openai/codex-sdk@0.117.0':
     dependencies:
-      '@openai/codex': 0.116.0
+      '@openai/codex': 0.117.0
 
   '@openai/codex@0.116.0':
     optionalDependencies:
@@ -2127,6 +2172,33 @@ snapshots:
     optional: true
 
   '@openai/codex@0.116.0-win32-x64':
+    optional: true
+
+  '@openai/codex@0.117.0':
+    optionalDependencies:
+      '@openai/codex-darwin-arm64': '@openai/codex@0.117.0-darwin-arm64'
+      '@openai/codex-darwin-x64': '@openai/codex@0.117.0-darwin-x64'
+      '@openai/codex-linux-arm64': '@openai/codex@0.117.0-linux-arm64'
+      '@openai/codex-linux-x64': '@openai/codex@0.117.0-linux-x64'
+      '@openai/codex-win32-arm64': '@openai/codex@0.117.0-win32-arm64'
+      '@openai/codex-win32-x64': '@openai/codex@0.117.0-win32-x64'
+
+  '@openai/codex@0.117.0-darwin-arm64':
+    optional: true
+
+  '@openai/codex@0.117.0-darwin-x64':
+    optional: true
+
+  '@openai/codex@0.117.0-linux-arm64':
+    optional: true
+
+  '@openai/codex@0.117.0-linux-x64':
+    optional: true
+
+  '@openai/codex@0.117.0-win32-arm64':
+    optional: true
+
+  '@openai/codex@0.117.0-win32-x64':
     optional: true
 
   '@oxc-project/types@0.120.0': {}
@@ -2812,6 +2884,8 @@ snapshots:
 
   picomatch@4.0.3: {}
 
+  picomatch@4.0.4: {}
+
   pino-abstract-transport@3.0.0:
     dependencies:
       split2: 4.2.0
@@ -3117,7 +3191,7 @@ snapshots:
   vite@8.0.1(@types/node@25.5.0)(esbuild@0.27.4)(tsx@4.21.0):
     dependencies:
       lightningcss: 1.32.0
-      picomatch: 4.0.3
+      picomatch: 4.0.4
       postcss: 8.5.8
       rolldown: 1.0.0-rc.10
       tinyglobby: 0.2.15
