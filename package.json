@@ -31,7 +31,7 @@
   },
   "dependencies": {
     "@iarna/toml": "^2.2.5",
-    "@linear/sdk": "^78.0.0",
+    "@linear/sdk": "^81.0.0",
     "@octokit/rest": "^22.0.1",
     "@openai/codex": "^0.116.0",
     "@openai/codex-sdk": "^0.116.0",
