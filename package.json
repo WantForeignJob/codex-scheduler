@@ -33,7 +33,7 @@
     "@iarna/toml": "^2.2.5",
     "@linear/sdk": "^78.0.0",
     "@octokit/rest": "^22.0.1",
-    "@openai/codex": "^0.116.0",
+    "@openai/codex": "^0.128.0",
     "@openai/codex-sdk": "^0.116.0",
     "better-sqlite3": "^12.8.0",
     "drizzle-orm": "^0.45.1",
